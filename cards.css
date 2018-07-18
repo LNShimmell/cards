@@ -1,0 +1,47 @@
+div{
+    margin-right: 2%;
+    margin-left: 2%;
+    min-width: 96%;
+    text-align: center;
+}
+img{
+    padding: 0 0.5%;
+    max-width: 6.5%;
+}
+
+table{
+    max-height: 10%;
+    text-align: left;
+
+}
+body{
+    background-color: gray;
+}
+
+.clear-img{
+    opacity: 0.1;
+}
+.container{
+    text-align: center;
+    border: 2px solid black;
+    max-height: 50%;
+}
+.container-top{
+    text-align: center;
+    background-color: black;
+    color: aqua;
+}
+input{
+    font-size: 14pt;
+    text-align: center;
+    max-width: 10%;
+}
+
+#menucard{
+    max-width: 30%;
+}
+#resetTable{
+    text-align: center;
+    float: inherit;
+    padding-left: 20%;
+}

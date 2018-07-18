@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Match</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="cards.css" />
+    <script src="match.js"></script>
+</head>
+<body id="clear">
+    <table style="border:2px solid blue">
+        <thead>
+            <th>
+            Match by Larry Shimmell
+            </th>
+        </thead>
+        
+        <tr>
+            <td>
+                Select Difficulty
+            </td>
+            <td><select hidden name="Difficulty" id="fDifficulty">
+                <option type="number" value="1">Hard</option>
+               <!-- <option type="number" value="1">Easy</option>-->
+            </select></td>
+        </tr>
+        <tr><td>
+            <button class="button" onclick="createNewGame()" type="submit">Play</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="Cards/aces.png" id="menucard" alt="guess" width="100px"></img>
+            </td>
+        </tr>
+        
+    </table>
+    
+</body>
+</html>
