@@ -263,10 +263,10 @@ function endgame() {
         score *= 3;
     }
     var gameover = document.getElementById('clear');
-    var row = "<div id=\"end\"><table class=\"gamestats\"><th colspan=\"2\">Game Over</th><th><select hidden name=\"Difficulty\" id=\"fDifficulty\"><option type=\"number\" value=\"1\">Hard</option><option type=\"number\" value=\"1\">Easy</option></select><button class=\"button\" onclick=\"location.reload();\">Main Menu</button>";
+    var row = "<div id=\"end\"><table class=\"gamestats\"><th colspan=\"2\" style=\"text-align: center\">Game Over</th><th><select hidden name=\"Difficulty\" id=\"fDifficulty\"><option type=\"number\" value=\"1\">Hard</option><option type=\"number\" value=\"1\">Easy</option></select><button class=\"button\" onclick=\"location.reload();\">Main Menu</button>";
     row += "<tr><td>Score</td><td id=\"score\">" + Math.round(score) + "</td</tr>";
     row += "<tr><td>Turns</td><td id=\"Turns\">" + moves / 2 + "</td</tr>";
-    row += "<tr><td>Time Elapsed</td><td id=\"Timeelapsed\">" + ElapsedTime + "</td</tr></table></div>";
+    row += "<tr><td>Time Elapsed</td><td id=\"Timeelapsed\">" + ElapsedTime + "</td</tr></table>" + '<img src="Cards/aces.png" id="menucard" alt="guess" width="100px"></img></div>';
     gameover.innerHTML = '';
     gameover.innerHTML += row;
 }

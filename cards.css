@@ -83,3 +83,6 @@ input{
 button:hover{
     background-color: blueviolet;
 }
+img:hover{
+    background-color: aqua;
+}
