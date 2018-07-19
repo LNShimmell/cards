@@ -1,8 +1,8 @@
 //Deck of cards
-var Deck = ["Cards/rz5ojxtoakhu2ft.png1865","Cards/t7zhvddch4nqbvv.png726","Cards/pub80kivfhyy2my.png730","Cards/cvqpc2hswj0p4f8.png1773","Cards/5hhk92dk0y3a58w.png1089","Cards/2okjy7jm4jyfqcd.png1872","Cards/c0jei2n4ub2dl85.png1485","Cards/c5dv4cai8mnnizy.png1254","Cards/3cx8vs6v5ul29z6.png1261","Cards/9afydvaf4na3854.png157","Cards/8t5z2ky7tzns67u.png1803","Cards/4vnfjyqto2qbpmx.png1149","Cards/3d5u840q24jjdpv.png690", 
-            "Cards/3imo0te0xel0w8k.png1865","Cards/fc6le4ueaybp37h.png726","Cards/qa8iksszesvmf2j.png730","Cards/mewffdhyfrlb12u.png1773","Cards/t7f4hvt61len90n.png1089","Cards/pkk6o4sl5xsyfwv.png1872","Cards/uyvxrjt082a4yo5.png1485","Cards/nklonrek9njkcpo.png1254","Cards/rzqrskjr6b5iatt.png1261","Cards/su8j3of1wsfo8mh.png157","Cards/pxcxtqj2yo8uyo7.png1803","Cards/5v23nk53qm1qn8d.png1149","Cards/neey4dyouoqnnk5.png690",
-            "Cards/p8uqe087aeouwy2.png1865","Cards/keyf8pcelprejqy.png726","Cards/upi0n11enckc7ky.png730","Cards/xs5yx9cnujlrsma.png1773","Cards/wzk4ib1y7of67uu.png1089","Cards/rul8rzt82l4ckyi.png1872","Cards/uc31plr5p360e3u.png1485","Cards/30vdw6woyxhst1.png1254","Cards/qfbdmp4p1d48u7o.png1261","Cards/szv6mu4ftxok85i.png157","Cards/o7ombx70yfdvukx.png1803","Cards/ks52yyjcvzk05jh.png1149","Cards/wv09vn1f8ivnf0a.png690",
-            "Cards/v7zk0jynjdtdmjm.png1865","Cards/1356u17a4ay0u7z.png726","Cards/0xlbfx6ekn5nse6.png730","Cards/ilokmffhy6vr5xc.png1773","Cards/cmw0yhjybj3bjn7.png1089","Cards/1jv51xi5xk4ciri.png1872","Cards/mc5bly0qhienxtp.png1485","Cards/abfft195hq0qayi.png1254","Cards/cjoyuea9ljhvj2s.png1261","Cards/1r230fb554lc3rs.png157","Cards/lo1n8xk4ohqljpd.png1803","Cards/khmn5m0ccb7ilty.png1149","Cards/x1pv3etrh0dzwzw.png690",];
+var Deck = ["Cards/rz5ojxtoakhu2ft.png1865", "Cards/t7zhvddch4nqbvv.png726", "Cards/pub80kivfhyy2my.png730", "Cards/cvqpc2hswj0p4f8.png1773", "Cards/5hhk92dk0y3a58w.png1089", "Cards/2okjy7jm4jyfqcd.png1872", "Cards/c0jei2n4ub2dl85.png1485", "Cards/c5dv4cai8mnnizy.png1254", "Cards/3cx8vs6v5ul29z6.png1261", "Cards/9afydvaf4na3854.png157", "Cards/8t5z2ky7tzns67u.png1803", "Cards/4vnfjyqto2qbpmx.png1149", "Cards/3d5u840q24jjdpv.png690",
+    "Cards/3imo0te0xel0w8k.png1865", "Cards/fc6le4ueaybp37h.png726", "Cards/qa8iksszesvmf2j.png730", "Cards/mewffdhyfrlb12u.png1773", "Cards/t7f4hvt61len90n.png1089", "Cards/pkk6o4sl5xsyfwv.png1872", "Cards/uyvxrjt082a4yo5.png1485", "Cards/nklonrek9njkcpo.png1254", "Cards/rzqrskjr6b5iatt.png1261", "Cards/su8j3of1wsfo8mh.png157", "Cards/pxcxtqj2yo8uyo7.png1803", "Cards/5v23nk53qm1qn8d.png1149", "Cards/neey4dyouoqnnk5.png690",
+    "Cards/p8uqe087aeouwy2.png1865", "Cards/keyf8pcelprejqy.png726", "Cards/upi0n11enckc7ky.png730", "Cards/xs5yx9cnujlrsma.png1773", "Cards/wzk4ib1y7of67uu.png1089", "Cards/rul8rzt82l4ckyi.png1872", "Cards/uc31plr5p360e3u.png1485", "Cards/30vdw6woyxhst1.png1254", "Cards/qfbdmp4p1d48u7o.png1261", "Cards/szv6mu4ftxok85i.png157", "Cards/o7ombx70yfdvukx.png1803", "Cards/ks52yyjcvzk05jh.png1149", "Cards/wv09vn1f8ivnf0a.png690",
+    "Cards/v7zk0jynjdtdmjm.png1865", "Cards/1356u17a4ay0u7z.png726", "Cards/0xlbfx6ekn5nse6.png730", "Cards/ilokmffhy6vr5xc.png1773", "Cards/cmw0yhjybj3bjn7.png1089", "Cards/1jv51xi5xk4ciri.png1872", "Cards/mc5bly0qhienxtp.png1485", "Cards/abfft195hq0qayi.png1254", "Cards/cjoyuea9ljhvj2s.png1261", "Cards/1r230fb554lc3rs.png157", "Cards/lo1n8xk4ohqljpd.png1803", "Cards/khmn5m0ccb7ilty.png1149", "Cards/x1pv3etrh0dzwzw.png690",];
 // shuffle cards function
 var DeckClone = Deck;
 var DeckClone2 = ['Cards/2S.png2', 'Cards/3S.png3', 'Cards/4S.png4', 'Cards/5S.png5', 'Cards/6S.png6', 'Cards/7S.png7', 'Cards/8S.png8', 'Cards/9S.png9', 'Cards/10S.png10', 'Cards/JS.png11', 'Cards/QS.png12', 'Cards/KS.png13', 'Cards/AS.png1',
@@ -22,6 +22,10 @@ var score = 0;
 var firstId;
 var scoreMultiplier = 1;
 var timer = 11;
+var matchCount = 0;
+var moves = 0;
+var ElapsedTime = 0;
+var reset;
 function shuffle(Deck) {
     var j, x, i;
     for (i = Deck.length - 1; i > 0; i--) {
@@ -36,7 +40,8 @@ function shuffle(Deck) {
 //difficulty value from the table and logically picks the coresponding game.
 function createNewGame() {
     score = 0;
-   
+    matchCount = 0;
+    ElapsedTime = 0;
     difficulty = document.getElementById('fDifficulty').value;
     var body = document.getElementById('clear');
     body.innerHTML = '';
@@ -49,17 +54,14 @@ function createNewGame() {
         cardCount = 0;
     }
     gameMenue();
-    
-    var resettimmer=setInterval(tyme, 1000);
-    if(timer<0){clearInterval(resettimmer)}
-    timer = 11
-   
+    var resettimmer = setInterval(tyme, 1000);
+    if (timer == -1) {
+        clearInterval(resettimmer);
+    }
 }
-    
-
 function gameMenue() {
     var body = document.getElementById('clear');
-    body.innerHTML += "<div id=\"resetTable\"><table style=\"border:2px solid blue\"><thead><th>Match by Larry Shimmell</th></thead><tr><td>Select Difficulty</td><td><select hidden name=\"Difficulty\" id=\"fDifficulty\"><option type=\"number\" value=\"1\">Hard</option><option type=\"number\" value=\"1\">Easy</option></select></td></tr><tr><td><button class=\"button\" onclick=\"createNewGame()\">New Game</button></td></tr><tr><td><img src=\"Cards/aces.png\" id=\"menucard\" alt=\"guess\" width=\"100px\"></td></tr></table></div>";
+    body.innerHTML += "<div id=\"resetTable\"><table style=\"border:2px solid blue\"><thead><th>Match by Larry Shimmell</th></thead><tr><td><select hidden name=\"Difficulty\" id=\"fDifficulty\"><option type=\"number\" value=\"1\">Hard</option><option type=\"number\" value=\"1\">Easy</option></select></td></tr><tr><td><button class=\"button\" onclick=\"createNewGame()\">New Game</button></td></tr><tr><td><img src=\"Cards/aces.png\" id=\"menucard\" alt=\"guess\" width=\"100px\"></td></tr></table></div>";
 }
 function Hard() {
     shuffle(Deck);
@@ -80,7 +82,7 @@ function Hard() {
             row += "<img src='" + img + "' name=\"" + img + "\" alt=\"guess\" width=\"80px\" class=\"" + valueofCard + "\" type=\"number\" id=\"" + cardCount + "\" onclick=\"flip(" + cardCount + ")\"></img></div><div>";
         }
     }
-    body.innerHTML += row+ '</div></div>';
+    body.innerHTML += row + '</div></div>';
 }
 function Medium() {
     shuffle(DeckClone2);
@@ -109,7 +111,6 @@ function hide() {
     replace.innerHTML = '';
     score = 0;
     if (difficulty == 1) {
-    
         for (var card = 0; DeckClone.length > card; card++) { //finds all the images and changes them to back of card
             var idx = DeckClone[card].lastIndexOf('g') + 1;
             var img = DeckClone[card].slice(0, idx);
@@ -118,7 +119,6 @@ function hide() {
             lookHere = newbody;
         }
     }
-    
     if (difficulty == 2) {
         for (var card = 0; DeckClone2.length > card; card++) { //finds all the images and changes them to back of card
             var idx = DeckClone2[card].lastIndexOf('g') + 1;
@@ -130,11 +130,15 @@ function hide() {
     }
 }
 function flip(id) {
+    if (ElapsedTime == 0) {
+        startTheClock();
+    }
     var cardtochange = document.getElementById(id).outerHTML;
     var replace = document.getElementById(id).name;
     var final = document.getElementById(id);
     var replaceEasy = document.getElementById(id).className;
-    var multiplierId = document.getElementById('multiplier')
+    var multiplierId = document.getElementById('multiplier');
+    moves++;
     /*if (difficulty != 1) {
         if (cardtochange.includes('Cards/backofcard.png')) {
             var idx = cardtochange.replace('Cards/backofcard.png', replace);
@@ -160,28 +164,29 @@ function flip(id) {
         var idx = cardtochange.replace('Cards/backofcard.png', replace);
         var xcard = document.getElementById(id).className;
         final.outerHTML = idx;
-        grabCard = !grabCard; console.log(grabCard);
-        
+        grabCard = !grabCard;
+        console.log(grabCard);
         if (grabCard == false && cardValue == xcard) {
             var highscore = document.getElementById('score');
             var lastid = document.getElementById(firstId);
             score += 10 * scoreMultiplier;
             scoreMultiplier++;
             multiplierId.value = scoreMultiplier;
-            
-            
+            matchCount++;
+            if (matchCount > 25) {
+                endgame();
+            }
             var toGray = document.getElementById(id);
             var toGray2 = document.getElementById(firstId);
-            setTimeout(function(){
+            setTimeout(function () {
                 toGray.outerHTML = "<img src='Cards/gray.png' alt=\"guess\" width=\"80px\" class=\"clear-img\" id=\"" + id + "\"></img>";
                 toGray2.outerHTML = "<img src='Cards/gray.png'alt=\"guess\" width=\"80px\" class=\"clear-img\"  id=\"" + firstId + "\" ></img>";
                 highscore.value = score;
-            }, 1000); 
-            
+            }, 1000);
             cardValue = null;
             return;
         }
-        if(grabCard == false && cardValue != xcard){
+        if (grabCard == false && cardValue != xcard) {
             var backtoblue1 = document.getElementById(id);
             var replaceImg = document.getElementById(id).name;
             var changit = document.getElementById(id).outerHTML;
@@ -190,15 +195,15 @@ function flip(id) {
             var changit2 = document.getElementById(firstId).outerHTML;
             scoreMultiplier = 1;
             multiplierId.value = scoreMultiplier;
-            setTimeout(function(){
-                backtoblue1.outerHTML = changit.replace(replaceImg,'Cards/backofcard.png');
-                backtoblue2.outerHTML = changit2.replace( replaceImg2, 'Cards/backofcard.png')
+            setTimeout(function () {
+                backtoblue1.outerHTML = changit.replace(replaceImg, 'Cards/backofcard.png');
+                backtoblue2.outerHTML = changit2.replace(replaceImg2, 'Cards/backofcard.png');
                 var highscore = document.getElementById('score');
-                if(score>0){
-                    score-=1;
+                if (score > 0) {
+                    score -= 1;
                     highscore.value = score;
-                }   
-            }, 1000); 
+                }
+            }, 1000);
         }
         firstId = id;
         cardValue = replaceEasy;
@@ -214,18 +219,71 @@ function flip(id) {
     }*/
     return;
 }
-
-function tyme(){
-    if(timer>0){
-    timer--;
-    var timeout = document.getElementById('timer');
-    timeout.value = timer; 
+function tyme() {
+    if (timer > 0) {
+        timer--;
+        var timeout = document.getElementById('timer');
+        timeout.value = timer;
     }
-    if(timer==0){
+    if (timer == 0) {
         timer--;
         hide();
         return;
-    
     }
-    
+}
+function startTheClock() {
+    reset = setInterval(function () {
+        var timetable = document.getElementById('timer');
+        ElapsedTime += 0.25;
+        if (ElapsedTime % 1 == 0) {
+            timetable.value = Math.round(ElapsedTime);
+        }
+    }, 250);
+}
+function endgame() {
+    matchCount = 0;
+    timer = 11;
+    clearInterval(reset);
+    if (ElapsedTime < 180) {
+        score *= 1.5;
+    }
+    if (ElapsedTime < 120) {
+        score *= 1.5;
+    }
+    if (ElapsedTime < 110) {
+        score *= 1.5;
+    }
+    if (ElapsedTime < 100) {
+        score *= 1.5;
+    }
+    if (ElapsedTime < 90) {
+        score *= 1.5;
+    }
+    if (ElapsedTime < 60) {
+        score *= 3;
+    }
+    var gameover = document.getElementById('clear');
+    var row = "<div id=\"end\"><table class=\"gamestats\"><th colspan=\"2\">Game Over</th><th><select hidden name=\"Difficulty\" id=\"fDifficulty\"><option type=\"number\" value=\"1\">Hard</option><option type=\"number\" value=\"1\">Easy</option></select><button class=\"button\" onclick=\"location.reload();\">Main Menu</button>";
+    row += "<tr><td>Score</td><td id=\"score\">" + Math.round(score) + "</td</tr>";
+    row += "<tr><td>Turns</td><td id=\"Turns\">" + moves / 2 + "</td</tr>";
+    row += "<tr><td>Time Elapsed</td><td id=\"Timeelapsed\">" + ElapsedTime + "</td</tr></table></div>";
+    gameover.innerHTML = '';
+    gameover.innerHTML += row;
+}
+//----------------------------------------------------------BlackJack-------------------------------
+//-----------------
+//-----------------
+//----------------- 
+//-----------------
+//-----------------
+var Bankroll = 500; //Player's cash
+var NPC_Score = 0; //Computer's score
+var Player_Score = 0;
+var NPC_DivID = "NPC_DivID";
+var NPC_TableID = "NPC_TableID";
+function PlayBlackJack() {
+    var body = document.getElementById("clear");
+    var DealerTable = "<div id=\"grid\" class=\"container1\"><table id=\"grid00\"><tr><td><img src=\"Cards/1r230fb554lc3rs.png\" class=\"menucard\" alt=\"guess\" width=\"50px\"></td></tr></img></table></div>";
+    body.innerHTML = '';
+    body.innerHTML += DealerTable;
 }
