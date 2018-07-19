@@ -38,7 +38,7 @@ input{
     max-width: 10%;
 }
 
-.menucard{
+#menucard{
     max-width: 100%;
     display: inline
 }
