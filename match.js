@@ -26,6 +26,7 @@ var matchCount = 0;
 var moves = 0;
 var ElapsedTime = 0;
 var reset;
+var scoreMessage = "Score: "
 function shuffle(Deck) {
     var j, x, i;
     for (i = Deck.length - 1; i > 0; i--) {
@@ -245,28 +246,35 @@ function endgame() {
     timer = 11;
     clearInterval(reset);
     if (ElapsedTime < 300) {
+        scoreMessage = "Base Score: "+score+"  Multipliers: (1.5)";
         score *= 1.5;
+        
     }
     if (ElapsedTime < 290) {
         score *= 1.5;
+        scoreMessage += "(1.5)";
     }
     if (ElapsedTime < 280) {
         score *= 1.5;
+        scoreMessage += "(1.5)";
     }
     if (ElapsedTime < 270) {
         score *= 1.5;
+        scoreMessage += "(1.5)";
     }
     if (ElapsedTime < 260) {
         score *= 1.5;
+        scoreMessage += "(1.5)";
     }
     if (ElapsedTime < 200) {
         score *= 3;
+        scoreMessage += "(3)";
     }
     var gameover = document.getElementById('clear');
     var row = "<div id=\"end\"><table class=\"gamestats\"><th colspan=\"2\" style=\"text-align: center\">Game Over</th><th><select hidden name=\"Difficulty\" id=\"fDifficulty\"><option type=\"number\" value=\"1\">Hard</option><option type=\"number\" value=\"1\">Easy</option></select><button class=\"button\" onclick=\"location.reload();\">Main Menu</button>";
-    row += "<tr><td>Score</td><td id=\"score\">" + Math.round(score) + "</td</tr>";
-    row += "<tr><td>Turns</td><td id=\"Turns\">" + moves / 2 + "</td</tr>";
-    row += "<tr><td>Time Elapsed</td><td id=\"Timeelapsed\">" + ElapsedTime + "</td</tr></table>" + '<img src="Cards/aces.png" id="menucard" alt="guess" width="100px"></img></div>';
+    row += "<tr><td>"+scoreMessage+"</td><td id=\"score\">" +"Final Score: "+ Math.round(score) + "</td</tr>";
+    row += "<tr><td>Total Match attempts: "+ (moves / 2) +"</td><td></td</tr>";
+    row += "<tr><td>Time Elapsed: "+ ElapsedTime + " seconds</td><td id=\"Timeelapsed\"></td</tr></table>" + '<img src="Cards/aces.png" id="menucard" alt="guess" width="100px"></img></div>';
     gameover.innerHTML = '';
     gameover.innerHTML += row;
 }
