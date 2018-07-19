@@ -5,14 +5,14 @@ var Deck = ["Cards/rz5ojxtoakhu2ft.png1865", "Cards/t7zhvddch4nqbvv.png726", "Ca
     "Cards/v7zk0jynjdtdmjm.png1865", "Cards/1356u17a4ay0u7z.png726", "Cards/0xlbfx6ekn5nse6.png730", "Cards/ilokmffhy6vr5xc.png1773", "Cards/cmw0yhjybj3bjn7.png1089", "Cards/1jv51xi5xk4ciri.png1872", "Cards/mc5bly0qhienxtp.png1485", "Cards/abfft195hq0qayi.png1254", "Cards/cjoyuea9ljhvj2s.png1261", "Cards/1r230fb554lc3rs.png157", "Cards/lo1n8xk4ohqljpd.png1803", "Cards/khmn5m0ccb7ilty.png1149", "Cards/x1pv3etrh0dzwzw.png690",];
 // shuffle cards function
 var DeckClone = Deck;
-var DeckClone2 = ['Cards/2S.png2', 'Cards/3S.png3', 'Cards/4S.png4', 'Cards/5S.png5', 'Cards/6S.png6', 'Cards/7S.png7', 'Cards/8S.png8', 'Cards/9S.png9', 'Cards/10S.png10', 'Cards/JS.png11', 'Cards/QS.png12', 'Cards/KS.png13', 'Cards/AS.png1',
+/*var DeckClone2 = ['Cards/2S.png2', 'Cards/3S.png3', 'Cards/4S.png4', 'Cards/5S.png5', 'Cards/6S.png6', 'Cards/7S.png7', 'Cards/8S.png8', 'Cards/9S.png9', 'Cards/10S.png10', 'Cards/JS.png11', 'Cards/QS.png12', 'Cards/KS.png13', 'Cards/AS.png1',
     'Cards/2H.png2', 'Cards/3H.png3', 'Cards/4H.png4', 'Cards/5H.png5', 'Cards/6H.png6', 'Cards/7H.png7', 'Cards/8H.png8', 'Cards/9H.png9', 'Cards/10H.png10', 'Cards/JH.png11', 'Cards/QH.png12', 'Cards/KH.png13', 'Cards/AH.png1',
     'Cards/2C.png2', 'Cards/3C.png3', 'Cards/4C.png4', 'Cards/5C.png5', 'Cards/6C.png6', 'Cards/7C.png7', 'Cards/8C.png8', 'Cards/9C.png9', 'Cards/10C.png10', 'Cards/JC.png11', 'Cards/QC.png12', 'Cards/KC.png13', 'Cards/AC.png1',
     'Cards/2D.png2', 'Cards/3D.png3', 'Cards/4D.png4', 'Cards/5D.png5', 'Cards/6D.png6', 'Cards/7D.png7', 'Cards/8D.png8', 'Cards/9D.png9', 'Cards/10D.png10', 'Cards/JD.png11', 'Cards/QD.png12', 'Cards/KD.png13', 'Cards/AD.png1',
     'Cards/2S.png2', 'Cards/3S.png3', 'Cards/4S.png4', 'Cards/5S.png5', 'Cards/6S.png6', 'Cards/7S.png7', 'Cards/8S.png8', 'Cards/9S.png9', 'Cards/10S.png10', 'Cards/JS.png11', 'Cards/QS.png12', 'Cards/KS.png13', 'Cards/AS.png1',
     'Cards/2H.png2', 'Cards/3H.png3', 'Cards/4H.png4', 'Cards/5H.png5', 'Cards/6H.png6', 'Cards/7H.png7', 'Cards/8H.png8', 'Cards/9H.png9', 'Cards/10H.png10', 'Cards/JH.png11', 'Cards/QH.png12', 'Cards/KH.png13', 'Cards/AH.png1',
     'Cards/2C.png2', 'Cards/3C.png3', 'Cards/4C.png4', 'Cards/5C.png5', 'Cards/6C.png6', 'Cards/7C.png7', 'Cards/8C.png8', 'Cards/9C.png9', 'Cards/10C.png10', 'Cards/JC.png11', 'Cards/QC.png12', 'Cards/KC.png13', 'Cards/AC.png1',
-    'Cards/2D.png2', 'Cards/3D.png3', 'Cards/4D.png4', 'Cards/5D.png5', 'Cards/6D.png6', 'Cards/7D.png7', 'Cards/8D.png8', 'Cards/9D.png9', 'Cards/10D.png10', 'Cards/JD.png11', 'Cards/QD.png12', 'Cards/KD.png13', 'Cards/AD.png1'];
+    'Cards/2D.png2', 'Cards/3D.png3', 'Cards/4D.png4', 'Cards/5D.png5', 'Cards/6D.png6', 'Cards/7D.png7', 'Cards/8D.png8', 'Cards/9D.png9', 'Cards/10D.png10', 'Cards/JD.png11', 'Cards/QD.png12', 'Cards/KD.png13', 'Cards/AD.png1'];*/
 var difficulty;
 var cardCount = 0;
 var grabCard = false;
@@ -61,7 +61,7 @@ function createNewGame() {
 }
 function gameMenue() {
     var body = document.getElementById('clear');
-    body.innerHTML += "<div id=\"resetTable\"><table style=\"border:2px solid blue\"><thead><th>Match by Larry Shimmell</th></thead><tr><td><select hidden name=\"Difficulty\" id=\"fDifficulty\"><option type=\"number\" value=\"1\">Hard</option><option type=\"number\" value=\"1\">Easy</option></select></td></tr><tr><td><button class=\"button\" onclick=\"createNewGame()\">New Game</button></td></tr><tr><td><img src=\"Cards/aces.png\" id=\"menucard\" alt=\"guess\" width=\"100px\"></td></tr></table></div>";
+    body.innerHTML += "<div id=\"resetTable\"><table style=\"border:2px solid blue\"><thead><th>Match by Larry Shimmell</th></thead><tr><td><select hidden name=\"Difficulty\" id=\"fDifficulty\"><option type=\"number\" value=\"1\">Hard</option><option type=\"number\" value=\"1\">Easy</option></select></td></tr><tr><td><button class=\"button\" onclick=\"location.reload();\">Main Menu</button></td></tr><tr><td><img src=\"Cards/aces.png\" id=\"menucard\" alt=\"guess\" width=\"100px\"></td></tr></table></div>";
 }
 function Hard() {
     shuffle(Deck);
@@ -244,22 +244,22 @@ function endgame() {
     matchCount = 0;
     timer = 11;
     clearInterval(reset);
-    if (ElapsedTime < 180) {
+    if (ElapsedTime < 300) {
         score *= 1.5;
     }
-    if (ElapsedTime < 120) {
+    if (ElapsedTime < 290) {
         score *= 1.5;
     }
-    if (ElapsedTime < 110) {
+    if (ElapsedTime < 280) {
         score *= 1.5;
     }
-    if (ElapsedTime < 100) {
+    if (ElapsedTime < 270) {
         score *= 1.5;
     }
-    if (ElapsedTime < 90) {
+    if (ElapsedTime < 260) {
         score *= 1.5;
     }
-    if (ElapsedTime < 60) {
+    if (ElapsedTime < 200) {
         score *= 3;
     }
     var gameover = document.getElementById('clear');
