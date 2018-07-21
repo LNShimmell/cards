@@ -78,7 +78,7 @@ function gameMenue() {
 function Hard() {
     shuffle(Deck);
     var body = document.getElementById('clear');
-    var row = '<div  class="container-top"><span>Time:</span><input id="timer" type="number" readonly><span>Multiplier:</span><input id=\"multiplier\" type=\"number\" readonly>Score:<input id=\"score\" type=\"number\" readonly>'+ ((game=='memory')? '<button id="start" class"btn btn-sm btn-success" onclick="recurs()">Hint</button><button id="check" class"btn btn-sm btn-success" onclick="check()">Check</button>': ' ') + '</div><div class ="container"><div>';
+    var row = '<div  class="container-top"><span>Time:</span><input id="timer" type="number" readonly><span>Multiplier:</span><input id=\"multiplier\" type=\"number\" readonly value="1">Score:<input id=\"score\" type=\"number\" readonly value="0">'+ ((game=='memory')? '<label for="lives">lives</label><input id="lives" type="number" readonly value="3"><button id="start" class"btn btn-sm btn-success" onclick="recurs()">Hint</button>': ' ') + '</div><div class ="container"><div>';
     var last = '';
     var i = Deck.length;
     for (var j = 0; Deck.length > j; j++) {
@@ -154,6 +154,10 @@ function hide() {
     }
     var highscore = document.getElementById('score');
     highscore.value = score;
+    var htmlLives = document.getElementById('lives');
+    htmlLives.value = lives;
+    var multiplierhtml = document.getElementById('multiplier');
+    multiplierhtml.value = scoreMultiplier;
 }
 function flip(id) {
     if (ElapsedTime == 0&& game != 'memory') {
@@ -239,7 +243,7 @@ function flip(id) {
             setTimeout(function () {
                 backtoblue1.outerHTML = changit.replace(replaceImg, 'Cards/backofcard.png');
                 var highscore = document.getElementById('score');
-            }, 5000);
+            }, (level*1200));
         }
         if(game == 'memory' && computerTurn == false){
             var backtoblue1 = document.getElementById(id);
@@ -414,7 +418,11 @@ function recurs(){
 function check(){
     console.log("calling check()")
     if(computerKey == playerKey) { score+= 10 * scoreMultiplier * level; scoreMultiplier++; level++; x++}
-    if(computerKey != playerKey) { score -=5; scoreMessage=1; lives--;}
+    if(computerKey != playerKey) { 
+        score -=5; scoreMultiplier = 1;
+        lives--; 
+        
+    }
     (score<0)? score=0: null;
     (lives==0) ? endgame() : null;
   
