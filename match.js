@@ -37,6 +37,9 @@ var computerKey;
 var playerKey;
 var lives = 3;
 var playerClicks= 0;
+var FlipSingle = new Audio('Cards/cardflip.wav');
+var FlipAll = new Audio('Cards/FlipAll.wav')
+
 function shuffle(Deck) {
     var j, x, i;
     for (i = Deck.length - 1; i > 0; i--) {
@@ -141,6 +144,7 @@ function hide() {
             var newbody = lookHere.replace("src=\"" + img + "\"", 'src="Cards/backofcard.png"');
             replace.innerHTML = newbody;
             lookHere = newbody;
+            
         }
     }
     if (difficulty == 2) {
@@ -158,6 +162,7 @@ function hide() {
     htmlLives.value = lives;
     var multiplierhtml = document.getElementById('multiplier');
     multiplierhtml.value = scoreMultiplier;
+    FlipAll.play();
 }
 function flip(id) {
     if (ElapsedTime == 0&& game != 'memory') {
@@ -196,6 +201,7 @@ function flip(id) {
         final.outerHTML = idx;
         grabCard = !grabCard;
         console.log(grabCard);
+            FlipSingle.play();
         if (grabCard == false && cardValue == xcard && game != 'memory') {
             var highscore = document.getElementById('score');
             var lastid = document.getElementById(firstId);
@@ -242,6 +248,7 @@ function flip(id) {
             if(computerTurn==true){computerKey += id;}
             setTimeout(function () {
                 backtoblue1.outerHTML = changit.replace(replaceImg, 'Cards/backofcard.png');
+                FlipSingle.play();
                 var highscore = document.getElementById('score');
             }, (level*1200));
         }
@@ -426,7 +433,7 @@ function check(){
     (score<0)? score=0: null;
     (lives==0) ? endgame() : null;
   
-    setTimeout(function(){hide();},500);
+    setTimeout(function(){hide();},1200);
 }
 
 
